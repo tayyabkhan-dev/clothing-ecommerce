@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# Environment variables
+.env
+.env.*
+
+# Logs
+*.log
+npm-debug.log*
+# Production builds
+client/dist/
+server/dist/
+
+# Local operating system files
+.DS_Store
+Thumbs.db
+# Local database credentials
+server/mogopass
