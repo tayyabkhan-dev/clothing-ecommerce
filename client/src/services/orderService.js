@@ -1,6 +1,6 @@
+import API_BASE_URL from "./api";
 
-const API_URL = "http://localhost:5000/api/orders";
-
+const API_URL = `${API_BASE_URL}/api/orders`;
 // Read the saved authentication token.
 function getAuthHeaders() {
   const token = localStorage.getItem("authToken");

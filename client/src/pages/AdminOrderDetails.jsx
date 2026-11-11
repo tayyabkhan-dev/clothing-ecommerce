@@ -1,12 +1,11 @@
 import { useEffect, useState } from "react";
+import API_BASE_URL from "../services/api";
 import {
   Link,
   useParams,
 } from "react-router-dom";
 
-const API_URL =
-  "http://localhost:5000/api/orders";
-
+const API_URL = `${API_BASE_URL}/api/orders`;
 const ORDER_STATUSES = [
   "pending",
   "confirmed",

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import API_BASE_URL from "../services/api";
 import {
   Link,
   useLocation,
@@ -132,7 +133,7 @@ function OrderReview() {
 
         const response =
           await fetch(
-            "http://localhost:5000/api/orders",
+  `${API_BASE_URL}/api/orders`,
             {
               method: "POST",
               headers,
